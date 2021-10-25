@@ -1,11 +1,16 @@
 const data = require('../data/zoo_data');
 
-// Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
-// Foi usado de referencia para a utilização de indefinidos parametros a Sintaxe Rest Parameters
+/**
+ * Usei como referencia para a utilização de um numero indefinido de parametros a Sintaxe Rest Parameters
+ * Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+ */
+
 function getSpeciesByIds(...chosenAnimal) {
   const animalsArray = [];
   data.species.forEach((animalElement) => {
-    if (animalElement.id === chosenAnimal) animalsArray.push(animalElement);
+    for (let i = 0; i < chosenAnimal.length; i += 1) {
+      if (animalElement.id === chosenAnimal[i]) animalsArray.push(animalElement);
+    }
   });
   return animalsArray;
 }
