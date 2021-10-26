@@ -21,6 +21,6 @@ function countAnimals(chosenAnimal) {
   } return animalsNumber.residents.filter((gen) => gen.sex === chosenAnimal.sex);
 }
 
-// console.log(countAnimals({ species: 'lions', sex: 'female' }));
+console.log(countAnimals({ species: 'lions', sex: 'female' }));
 
 module.exports = countAnimals;
