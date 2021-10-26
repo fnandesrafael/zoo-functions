@@ -16,9 +16,8 @@ function countAnimals(chosenAnimal) {
      * Link: https://github.com/tryber/sd-015-a-project-zoo-functions/pull/72
      */
   } const animalsNumber = species.find((animal) => animal.name === chosenAnimal.species);
-  if (chosenAnimal.sex === undefined) {
-    return animalsNumber.residents.length;
-  } return animalsNumber.residents.filter((gen) => gen.sex === chosenAnimal.sex);
+  if (chosenAnimal.sex === undefined) return animalsNumber.residents.length;
+  return animalsNumber.residents.filter((gen) => gen.sex === chosenAnimal.sex);
 }
 
 console.log(countAnimals({ species: 'lions', sex: 'female' }));
