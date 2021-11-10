@@ -1,3 +1,4 @@
+const { species } = require('../data/zoo_data');
 const data = require('../data/zoo_data');
 
 /**
@@ -24,5 +25,7 @@ function countAnimals(chosenAnimal) {
   const sameSex = findAnimal.residents.filter((animal) => animal.sex === chosenAnimal.sex).length;
   return sameSex;
 }
+
+console.log(countAnimals());
 
 module.exports = countAnimals;
