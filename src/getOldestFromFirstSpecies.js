@@ -1,5 +1,10 @@
 const data = require('../data/zoo_data');
 
+/**
+ * Foi usado como referência o repositório da estudante Alissandra(Anaúa)
+ * Link: https://github.com/tryber/sd-016-b-project-zoo-functions/pull/103
+ */
+
 function getOldestFromFirstSpecies(id) {
   // Encontra a primeira espécie gerenciada pelo funcionário que tiver o mesmo id que foi passado no parâmetro.
   const findSpecie = data.employees.find((employee) => employee.id === id).responsibleFor[0];
