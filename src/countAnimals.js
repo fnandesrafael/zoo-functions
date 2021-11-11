@@ -15,7 +15,7 @@ function countAnimals(chosenAnimal) {
     });
     return animals;
   }
-  // Caso o parâmetro passado seja definido, a função deverá retornar a espécie que primeiro condiz com o parâmetro pelo método find() e a quantidad ede residentes dessa mesma espécie.
+  // Caso o parâmetro passado seja definido, a função deverá retornar a espécie que primeiro condiz com o parâmetro pelo método find() e a quantidade de residentes dessa mesma espécie.
   const findAnimal = data.species.find((animal) => animal.species === chosenAnimal.name);
   if (chosenAnimal.sex === undefined) {
     return findAnimal.residents.length;
