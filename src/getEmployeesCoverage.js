@@ -32,7 +32,7 @@ const getSearch = (search) => {
 function getEmployeesCoverage(employee) {
   // Quando o parâmetro passado é indefinido, o retorno é dado pela arrow function inputUndefined.
   if (employee === undefined) {
-    return inputUndefined;
+    return inputUndefined();
   }
   // Na linha 29 é atribuido à constante search os valores passados como parâmetros em formato de string, para que sejam condicionados pela constante verify que aparece logo em seguida na linha 30.
   const search = Object.values(employee).toString();
@@ -43,7 +43,7 @@ function getEmployeesCoverage(employee) {
     return getSearch(search);
   }
   // Caso nada seja satisfeito, é retornado o erro 'Informações Inválidas'.
-  throw new Error('Informações Inválidas');
+  throw new Error('Informações inválidas');
 }
 
 module.exports = getEmployeesCoverage;
