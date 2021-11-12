@@ -1,5 +1,14 @@
 const data = require('../data/zoo_data');
 
+/**
+ * Foi usado como referência para a resolução desse requesito o repositório da aluna Alissandra.
+ * Link: https://github.com/tryber/sd-016-b-project-zoo-functions/pull/103
+ * Também foi usado a documentação dos métodos some(), includes() e toString().
+ * Link some(): https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+ * Link includes(): https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+ * Link toString(): https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Function/ToString
+ */
+
 // A arrow function inputUndefined é responsável por realizar o procedimento de estruturação de um objeto padrão caso nenhum valor seja passado, ou que ao menos esse valor seja indefinido.
 const inputUndefined = () => data.employees.map((obj) => (
   {
