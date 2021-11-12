@@ -1,7 +1,6 @@
 const { hours, species } = require('../data/zoo_data');
 const data = require('../data/zoo_data');
 
-// Pull 101, 126
 /**
  * Foi usado como referência para resolução desse requisito, o repositório da aluna Mariana Saraiva.
  * Link: https://github.com/tryber/sd-016-b-project-zoo-functions/pull/101
