@@ -16,7 +16,8 @@ function countAnimals(chosenAnimal) {
     return animals;
   }
   // Caso o parâmetro passado seja definido, a função deverá retornar a espécie que primeiro condiz com o parâmetro pelo método find() e a quantidade de residentes dessa mesma espécie.
-  const findAnimal = data.species.find((animal) => animal.species === chosenAnimal.name);
+  const findAnimal = data.species.find((animal) => animal.name === chosenAnimal.species);
+  // console.log(data.species);
   if (chosenAnimal.sex === undefined) {
     return findAnimal.residents.length;
   }
@@ -25,6 +26,6 @@ function countAnimals(chosenAnimal) {
   return sameSex;
 }
 
-console.log(countAnimals());
+console.log(countAnimals({ species: 'frogs', sex: 'female' }));
 
 module.exports = countAnimals;
